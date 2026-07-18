@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+*.iml
+.vscode
+
+# Build output
+target/
+
+# Documentation
+*.md
+README.md
+docs/
+
+# Local configuration
+*.local
+.env
+config/
+local-config/application.properties
+
+# Kubernetes manifests (not needed inside the image)
+k8s-manifests/
