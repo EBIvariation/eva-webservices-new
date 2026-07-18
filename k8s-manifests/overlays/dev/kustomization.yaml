@@ -17,7 +17,7 @@ images:
   # below and push to dockerhub.ebi.ac.uk/ebivariation/eva-webservices-new
   # directly.
   newName: dockerhub.ebi.ac.uk/ebivariation/eva-seqcol
-  newTag: eva-webservices-new-manual-20260709-1640   # bump manually after each `docker push`, see README
+  newTag: eva-webservices-new-manual-20260718-1426   # bump manually after each `docker push`, see README
 secretGenerator:
 - name: eva-webservices-new-config
   files:
