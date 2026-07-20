@@ -9,15 +9,9 @@ patches:
 - path: ingress-patch.yaml
 images:
 - name: dockerhub.ebi.ac.uk/ebivariation/eva-webservices-new
-  # TEMPORARY: ebivariation/eva-webservices-new doesn't exist as its own
-  # repository in the registry yet. Borrowing the ebivariation/eva-seqcol
-  # repository as scratch space for manual testing (tags are clearly
-  # prefixed eva-webservices-new-manual-* so they're easy to find and
-  # delete). Once the real repository exists, delete the newName line
-  # below and push to dockerhub.ebi.ac.uk/ebivariation/eva-webservices-new
-  # directly.
+  # FIXME: ebivariation/eva-webservices-new doesn't exist as its own repository in the registry. Borrowing the ebivariation/eva-seqcol repository as scratch space for manual testing
   newName: dockerhub.ebi.ac.uk/ebivariation/eva-seqcol
-  newTag: eva-webservices-new-manual-20260709-1640   # bump manually after each `docker push`, see README
+  newTag: eva-webservices-new-manual-20260718-1426   # bump manually after each `docker push`
 secretGenerator:
 - name: eva-webservices-new-config
   files:
